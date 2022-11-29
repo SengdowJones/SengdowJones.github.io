@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sengdao Inthavong's Portfolio</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav aria-label="Sengdao Inthavong's Portfolio">
+      <h2>SI's Portfolio</h2>
+      <ul role="menubar" aria-label="Sengdao Inthavong's Portfolio">
+        <li><a role="menuitem" href="index.html">Home</a></li>
+        <li><a role="menuitem" href="about.html">About Me</a></li>
+        <!-- This can be a form. -->
+        <li><a role="menuitem" href="contact.html">Contact</a></li>
+        <li><a role="menuitem" aria-haspopup="true" href="https://drive.google.com/file/d/1Moeet2XCycXpqnBcUwQemD0FG9a7Ucmc/view?usp=sharing">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <div class="content">
+      <h4>Hi there! I'm...</h4>
+      <h1>Sengdao Inthavong</h1>
+      <h3>Take a look at some of my projects below.</h3>
+    <div>
+
+    <!-- Project Showcase x2 -->
+    <div class="flex-container">
+      <div class="flex-child">
+        <a aria-describedby="website-desc" role="link" href="https://sinthavong.studio/">
+          <img class="project-art" src="images/sinthavong.png"
+          alt="A cursive-initials logo of Sengdao's personal website">
+          <h4>sinthavong.studio</h4>
+        </a>
+          <p id="website-desc">A personal website dedicated to myself which allows a creative
+            opportunity and experience for web design and programming exposure.</p>
+      </div>
+      <div class="flex-child">
+        <a aria-describedby="chess-desc" role="link" href="chess_info.html">
+          <img class="project-art" src="images/visualization.jpg"
+          alt="A 2D-chess board, with two white pawns in the center">
+          <h4>Chess Data Visualization</h4>
+        </a>
+        <p id="chess-desc">An award-winning data visualization visualizing chess opening hierarchy by
+          experience level on the Lichess platform.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

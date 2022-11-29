@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav aria-label="Sengdao Inthavong's Portfolio">
+      <h2>SI's Portfolio</h2>
+      <ul role="menubar" aria-label="Sengdao Inthavong's Portfolio">
+        <li><a role="menuitem" href="index.html">Home</a></li>
+        <li><a role="menuitem" href="about.html">About Me</a></li>
+        <!-- This can be a form. -->
+        <li><a role="menuitem" href="contact.html">Contact</a></li>
+        <li><a role="menuitem" aria-haspopup="true" href="https://drive.google.com/file/d/1Moeet2XCycXpqnBcUwQemD0FG9a7Ucmc/view?usp=sharing">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="main">
+        <div class="about-text">
+          <h2>Contact</h2>
+          <p>Email: sengdaointhavong2024@u.northwestern.edu</p>
+        </div>
+        <form aria-labelledby="contact" onsubmit="return handleData()" method="post" action="">
+          <ul>
+            <li>
+              <label for="name">First Name:</label>
+              <input type="text" id="name" name="user_name" required/>
+            </li>
+            <li>
+              <label for="name">Last Name:</label>
+              <input type="text" id="name" name="user_name" required/>
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" required/>
+            </li>
+            <li>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="user_date" required/>
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button id="contact" aria-label="send email" type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+    </section>
+
+  </body>
+</html>
